@@ -1,0 +1,131 @@
+:root {
+
+    --main-color: #111;
+    --secundary-color: #222;
+    --main-text-color: #f4dd5d;
+    --secundary-text-color: #f6e277;
+    --strong-color: #f1d434;
+
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.logo {
+    font-weight: 400;
+    font-family: 'orbitron', 'sans-serif';
+    background-color: #333;
+    margin: 0;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid var(--strong-color);
+}
+
+.menuNav {
+    display: flex;
+}
+
+.menuNav a{
+    text-decoration: none;
+    margin: 5px;
+    color: var(--main-text-color);
+    font-family: 'Poor Story', cursive;
+    text-transform: uppercase;
+    font-size: 22px;
+
+}
+
+.menuPrincipal, .menuRedes {
+    display: flex;
+    list-style: none;
+    width: auto;
+    margin: 0 auto;
+}
+
+.menuPrincipal{
+    margin-left: 5%;
+    padding: 0;
+
+}
+
+.menuRedes{
+    margin-right: 5%;
+    padding: 0;
+}
+
+.menuPrincipal p{
+    transition: all .5s ease-in;
+    margin: 0 20px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menuPrincipal p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    transform: skewX(35deg);
+    background-color: var(--strong-color);
+    z-index: -1;
+    transition: width 1.3s;
+}
+
+.menuPrincipal p:hover::before{
+    width: 200%;
+}
+
+.menuPrincipal p:hover{
+    transform: scale(1.2);
+    color: var(--secundary-color);
+    font-weight: 700;
+}
+
+.menuRedes p {
+    transition: all .3s linear;
+    margin: 0 20px;
+}
+
+.menuRedes p:hover{
+    transform: scale(1.4); 
+    color: var(--strong-color);
+}
+
+.boasVindas {
+    background-color: var(--secundary-color);
+    height: 40vh;
+    margin-top: 15vh;
+    margin-bottom: 30vh;
+    display: flex;
+    width: 75vw;
+    position: relative;
+    border-radius: 0 2% 2% 0;
+}
+
+.boasVindas p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 80%;
+    margin: auto;
+    font-family: 'Orbitron', 'sans-serif';
+    color: var(--main-text-color);
+    font-size:1.5rem ;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.boasVindas img {
+    display: flex;
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    left: 85%;
+}
