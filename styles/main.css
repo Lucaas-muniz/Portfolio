@@ -219,6 +219,7 @@ body {
     padding: 3%;
     margin-right: 5%;
     margin-bottom: 5%;
+    transition: all .3s ease-in;
 }
 
 .icone:hover {
@@ -227,7 +228,7 @@ body {
 }
 
 .habilidadesConteudo i {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .box {
@@ -250,6 +251,46 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50%;
+    font-family: 'Oxanium', 'cursive';
+    color: var(--secundary-text-color);
+}
 
-    background-color: green;
+.redesSociais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small {
+    margin-right: 0;
+    margin-top: 5%;
+    font-size: 3rem;
+    padding: 1%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small a {
+    color: var(--strong-color);
+    display: flex;
+
+}
+
+.long {
+    width: 30vw;
+    display: flex;
+    padding: 0;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.long ion-icon  {
+    margin-right: 4px;
+}
+
+.subSubTitle {
+    margin-top: 7%
 }
