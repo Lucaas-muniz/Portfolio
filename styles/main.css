@@ -21,6 +21,7 @@ body {
     text-align: center;
     padding: 1rem;
     border-bottom: 4px solid var(--strong-color);
+    font-size: 1.5rem;
 }
 
 .menuNav {
@@ -128,6 +129,12 @@ body {
     height: 100%;
     position: absolute;
     left: 85%;
+    transition: all .5s linear;
+}
+
+.boasVindas img:hover{
+    transform: scale(1.2);
+    
 }
 
 .sobreMim {
@@ -187,4 +194,62 @@ body {
     font-family: 'Orbitron', 'sans-serif';
     text-align: center;
     letter-spacing: 2px;
+}
+
+.habilidades {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidadesSubtitle {
+    color: var(--secundary-text-color);
+    font-family: 'Oxanium', 'cursive';
+    font-size: 1.2rem;
+
+}
+
+.icone {
+    color: var(--strong-color);
+    background-color: var(--secundary-color);
+    display: inline-block;
+    border-top: solid 3px var(--strong-color);
+    border-radius: 0 0 30px 30px;
+    padding: 3%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.icone:hover {
+    box-shadow: 0 0 20px #f1d434, 0 0 20px #f1d434;
+    transform: scale(1.1);
+}
+
+.habilidadesConteudo i {
+    font-size: 5rem;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projetos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    background-color: red;
+}
+
+.contatos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+
+    background-color: green;
 }
