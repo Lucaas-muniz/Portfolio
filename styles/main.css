@@ -20,7 +20,7 @@ body {
     color: var(--main-text-color);
     text-align: center;
     padding: 1rem;
-    border-bottom: 4px solid var(--strong-color);
+    border-bottom: 2px solid var(--strong-color);
     font-size: 1.5rem;
 }
 
@@ -28,7 +28,7 @@ body {
     display: flex;
 }
 
-.menuNav a{
+.menuNav a {
     text-decoration: none;
     margin: 5px;
     color: var(--main-text-color);
@@ -38,25 +38,26 @@ body {
 
 }
 
-.menuPrincipal, .menuRedes {
+.menuPrincipal,
+.menuRedes {
     display: flex;
     list-style: none;
     width: auto;
     margin: 0 auto;
 }
 
-.menuPrincipal{
+.menuPrincipal {
     margin-left: 5%;
     padding: 0;
 
 }
 
-.menuRedes{
+.menuRedes {
     margin-right: 5%;
     padding: 0;
 }
 
-.menuPrincipal p{
+.menuPrincipal p {
     transition: all .5s ease-in;
     margin: 0 20px;
     letter-spacing: 2px;
@@ -77,11 +78,11 @@ body {
     transition: width 1.3s;
 }
 
-.menuPrincipal p:hover::before{
+.menuPrincipal p:hover::before {
     width: 200%;
 }
 
-.menuPrincipal p:hover{
+.menuPrincipal p:hover {
     transform: scale(1.2);
     color: var(--secundary-color);
     font-weight: 700;
@@ -92,8 +93,8 @@ body {
     margin: 0 20px;
 }
 
-.menuRedes p:hover{
-    transform: scale(1.4); 
+.menuRedes p:hover {
+    transform: scale(1.4);
     color: var(--strong-color);
 }
 
@@ -117,7 +118,7 @@ body {
     margin: auto;
     font-family: 'Orbitron', 'sans-serif';
     color: var(--main-text-color);
-    font-size:1.5rem ;
+    font-size: 1.5rem;
     line-height: 1.5;
     letter-spacing: 3px;
     text-align: center;
@@ -132,9 +133,9 @@ body {
     transition: all .5s linear;
 }
 
-.boasVindas img:hover{
+.boasVindas img:hover {
     transform: scale(1.2);
-    
+
 }
 
 .sobreMim {
@@ -148,7 +149,7 @@ body {
 .aux {
     display: flexbox;
     width: 80%;
-    height: 80vh;
+    margin: 0 auto;
 }
 
 .subTitle {
@@ -164,7 +165,7 @@ body {
     display: block;
     background-color: var(--strong-color);
     margin: 5% auto;
-    max-width:15vw;
+    max-width: 15vw;
     text-align: center;
     text-decoration: none;
     color: #333;
@@ -177,7 +178,7 @@ body {
 }
 
 .btnDownload:hover {
-    box-shadow:  0 0 5px var(--strong-color), 0 0 25px var(--strong-color);
+    box-shadow: 0 0 5px var(--strong-color), 0 0 25px var(--strong-color);
     color: var(--secundary-color);
 }
 
@@ -198,7 +199,7 @@ body {
 
 .habilidades {
     display: flex;
-    height: 100vh;
+    height: 160vh;
     justify-content: center;
     align-items: center;
 }
@@ -237,12 +238,106 @@ body {
 }
 
 .projetos {
-    height: 100vh;
+    height: 200vh;
+    display: flex;
+    background-color: var(--secundary-color);
+    align-items: center;
+}
+
+.boxPro {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.projeto {
+    background-color: var(--main-color);
+    height: fit-content;
+    width: 20vw;
+    border-top: 3px solid var(--strong-color);
+    font-family: 'Oxanium', 'cursive';
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: all .5s linear;
+}
+
+.projeto:hover {
+    opacity: 1;
+    scale: 1.07;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.projeto img {
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.projeto img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.projetoTitle {
+    color: var(--secundary-text-color);
+    margin: 5% 0 0 5%;
+}
+
+.projeto p {
+    color: var(--secundary-text-color);
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.projeto p:first-of-type {
+    justify-content: left;
+}
+
+.projeto p:last-of-type {
+    margin-top: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.projeto p i {
+    margin: 0 4px 0 0;
+}
+
+.projeto div {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30%;
-    background-color: red;
+    align-items: baseline;
+}
+
+.btnVisu {
+    background-color: var(--strong-color);
+    border-radius: 30px;
+    border: none;
+    padding: 5px 20px;
+    color: #111;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    margin: 10% auto;
+
+    display: block;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnVisu:hover {
+    transform: scale(.96);
+    box-shadow: 0 0 5px var(--strong-color), 0 0 15px var(--strong-color);
+    color: #444;
+    font-weight: bold;
 }
 
 .contatos {
@@ -250,9 +345,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
     font-family: 'Oxanium', 'cursive';
     color: var(--secundary-text-color);
+    margin-top: 5%;
 }
 
 .redesSociais {
@@ -287,7 +382,7 @@ body {
     letter-spacing: 3px;
 }
 
-.long ion-icon  {
+.long ion-icon {
     margin-right: 4px;
 }
 
@@ -303,6 +398,7 @@ body {
     color: var(--main-text-color);
     text-align: center;
     padding: 1rem;
-    border-top: 4px solid var(--strong-color);
-    font-size: 1.2rem;
+    border-top: 2px solid var(--strong-color);
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
