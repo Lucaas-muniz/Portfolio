@@ -8,8 +8,14 @@
 
 }
 
+html {
+    width: 100%;
+    height: 100vh
+}
+
 body {
     background-color: var(--main-color);
+    overflow-x: hidden;
 }
 
 .logo {
@@ -22,6 +28,7 @@ body {
     padding: 1rem;
     border-bottom: 2px solid var(--strong-color);
     font-size: 1.5rem;
+    width: 100%;
 }
 
 .menuNav {
@@ -104,7 +111,7 @@ body {
     margin-top: 15vh;
     margin-bottom: 30vh;
     display: flex;
-    width: 75vw;
+    width: 75%;
     position: relative;
     border-radius: 0 2% 2% 0;
 }
@@ -113,7 +120,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 40%;
     height: 80%;
     margin: auto;
     font-family: 'Orbitron', 'sans-serif';
@@ -133,17 +140,13 @@ body {
     transition: all .5s linear;
 }
 
-.boasVindas img:hover {
-    transform: scale(1.2);
-
-}
-
 .sobreMim {
     background-color: var(--secundary-color);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .aux {
@@ -165,14 +168,14 @@ body {
     display: block;
     background-color: var(--strong-color);
     margin: 5% auto;
-    max-width: 15vw;
+    max-width: fit-content;
     text-align: center;
     text-decoration: none;
     color: #333;
     font-family: 'Oxanium', 'cursive';
     font-size: 1rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 20px;
     transition: box-shadow .5s linear;
 }
@@ -202,6 +205,8 @@ body {
     height: 160vh;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
 }
 
 .habilidadesSubtitle {
@@ -242,6 +247,8 @@ body {
     display: flex;
     background-color: var(--secundary-color);
     align-items: center;
+    width: 100%;
+
 }
 
 .boxPro {
@@ -348,6 +355,8 @@ body {
     font-family: 'Oxanium', 'cursive';
     color: var(--secundary-text-color);
     margin-top: 5%;
+    width: 100%;
+
 }
 
 .redesSociais {
@@ -401,4 +410,90 @@ body {
     border-top: 2px solid var(--strong-color);
     font-size: 1rem;
     letter-spacing: 2px;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .menuRedes {
+        display: none;
+    }
+
+    .no-js .menuPrincipal {
+        margin: 0;
+    }
+
+    .no-js .menuNav {
+        justify-content: center;
+    }
+
+    .no-js .menuPrincipal li {
+        margin: 0 auto;
+    }
+
+    .boasVindas p {
+        font-size: 1.2rem;
+    }
+
+    .subTitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .no-js .menuPrincipal {
+        display: none;
+    }
+
+    .boasVindas img {
+        top: -20vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        height: 80%;
+    }
+
+    .boasVindas {
+        top: 25vh;
+        width: 100%;
+    }
+
+    .sobreMim {
+        margin-top: 50%;
+        height: 110vh;
+    }
+
+    .SobreMimParagrafo {
+        line-height: 2;
+
+    }
+
+    .btnDownload {
+        margin: 10% auto;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .boasVindas p {
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    .boasVindas img {
+        top: -20vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        height: 70%;
+    }
+
+    .sobreMim {
+        height: 100vh;
+    }
+
+    .SobreMimParagrafo {
+        font-size: .9rem;
+        width: 90%;
+    }
+
+    
 }
