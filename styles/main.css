@@ -31,6 +31,54 @@ body {
     width: 100%;
 }
 
+#checkbox-menu {
+    display: none;
+}
+
+#btnHamburguer{
+    position: relative;
+    height: 22px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    margin: 8px 16px;
+}
+
+#btnHamburguer span {
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-text-color);
+    border-radius: 30px;
+    position: absolute;
+    transition: 0.25s ease-in-out;
+}
+
+#btnHamburguer  span:nth-child(1) {
+    top: 0;
+}
+
+#btnHamburguer  span:nth-child(2) {
+    top: 8px;
+}
+
+#btnHamburguer  span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
 .menuNav {
     display: flex;
 }
@@ -499,6 +547,10 @@ body {
 
     .long {
         margin-top: 10%;
+    }
+
+    #btnHamburguer {
+        display: block;
     }
 }
 
