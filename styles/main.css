@@ -35,13 +35,13 @@ body {
     display: none;
 }
 
-#btnHamburguer{
+#btnHamburguer {
     position: relative;
     height: 22px;
     width: 30px;
     cursor: pointer;
     display: none;
-    margin: 8px 16px;
+    margin: 16px 16px;
 }
 
 #btnHamburguer span {
@@ -53,30 +53,34 @@ body {
     transition: 0.25s ease-in-out;
 }
 
-#btnHamburguer  span:nth-child(1) {
+#btnHamburguer span:nth-child(1) {
     top: 0;
 }
 
-#btnHamburguer  span:nth-child(2) {
+#btnHamburguer span:nth-child(2) {
     top: 8px;
 }
 
-#btnHamburguer  span:nth-child(3) {
+#btnHamburguer span:nth-child(3) {
     top: 16px;
 }
 
-#checkbox-menu:checked + label span:nth-child(1) {
+#checkbox-menu:checked+label span:nth-child(1) {
     transform: rotate(-45deg);
     top: 8px;
 }
 
-#checkbox-menu:checked + label span:nth-child(2) {
+#checkbox-menu:checked+label span:nth-child(2) {
     opacity: 0;
 }
 
-#checkbox-menu:checked + label span:nth-child(3) {
+#checkbox-menu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
+}
+
+#menuHam {
+    display: none;
 }
 
 .menuNav {
@@ -463,15 +467,15 @@ body {
         display: none;
     }
 
-    .no-js .menuPrincipal {
+    .menuPrincipal {
         margin: 0;
     }
 
-    .no-js .menuNav {
+    .menuNav {
         justify-content: center;
     }
 
-    .no-js .menuPrincipal li {
+    .menuPrincipal li {
         margin: 0 auto;
     }
 
@@ -507,7 +511,16 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .no-js .menuPrincipal {
+    #menuHam {
+        display: block;
+    }
+
+    #menuDefault {
+        display: none;
+    }
+
+
+    .menuPrincipal {
         display: none;
     }
 
@@ -552,6 +565,36 @@ body {
     #btnHamburguer {
         display: block;
     }
+
+    #menu {
+        background-color: var(--main-color);
+        width: 100vw;
+        text-align: center;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+        display: none;
+        margin: 5% auto;
+        list-style: none;
+    }
+
+    #menu li {
+        margin: 0;
+    }
+
+    #menu li a:hover {
+        background-color: rgba(1, 1, 1, .3);
+        color: var(--strong-color);
+        transform: scale(1.1);
+
+    }
+
+    #menu li a {
+        display: block;
+        margin: 0;
+        padding: 2%;
+        transition: all .5s ease-in;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -585,12 +628,11 @@ body {
     }
 
     .habilidadesSubtitle {
-        font-size: 1.1rem;
+        font-size: 1.1
     }
 
     .boxPro {
-        display: block;
-
+        display: block
     }
 
     .projeto {
