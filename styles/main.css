@@ -245,7 +245,7 @@ body {
 .SobreMimParagrafo {
     width: 80%;
     margin: auto;
-    color: var(--main-text-color);
+    color: var(--secundary-text-color);
     font-size: 100%;
     line-height: 3;
     font-family: 'Orbitron', 'sans-serif';
@@ -255,7 +255,7 @@ body {
 
 .habilidades {
     display: flex;
-    height: 160vh;
+    height: 180vh;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -266,7 +266,7 @@ body {
     color: var(--secundary-text-color);
     font-family: 'Oxanium', 'cursive';
     font-size: 1.2rem;
-
+    margin-bottom: 10vh;
 }
 
 .icone {
@@ -279,11 +279,185 @@ body {
     margin-right: 5%;
     margin-bottom: 5%;
     transition: all .3s ease-in;
+    position: relative;
+
+
 }
 
 .icone:hover {
-    box-shadow: 0 0 20px #f1d434, 0 0 20px #f1d434;
     transform: scale(1.1);
+    box-shadow: 0 0 10px #f1d434, 0 0 10px var(--strong-color);
+
+}
+
+#html5:hover:after {
+    content: 'Html5, é uma linguagem de marcação de hiperTexto.';
+    font-family: 'Oxanium';
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+    border-radius: 30px 30px 30px 0;
+}
+
+#css3:hover:after {
+    content: 'CSS3 é uma linguagem de estilização de folhas de estilo.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+
+
+}
+
+#javascript:hover:after {
+    content: 'JavaScript é uma linguagem de programação de alto nível.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+    border-radius: 30px 30px 30px 0;
+
+
+}
+
+#php:hover:after {
+    content: 'O PHP é uma das linguagens mais populares para o desenvolvimento de web back-end.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -60%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+}
+
+#figma:hover:after {
+    content: 'Figma é uma ferramenta de design de UI e UX.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+
+}
+
+#vscode:hover:after {
+    content: 'O Visual Studio Code (VS Code) é um editor de código-fonte.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    padding: 8px;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+
+
+}
+
+#git:hover:after {
+    content: 'O Git é um sistema de controle de versão distribuído.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+
+
+}
+
+#github:hover:after {
+    content: 'GitHub é uma plataforma de hospedagem de código fonte que utiliza o sistema de controle de versão Git.';
+    display: block;
+    font-family: 'Oxanium';
+    position: absolute;
+    top: -60%;
+    left: 0;
+    font-size: 12px;
+    width: 200%;
+    height: auto;
+    border: #f1d434 1px solid;
+    color: var(--secundary-text-color);
+    text-align: center;
+    padding: 8px;
+    z-index: 1;
+    background-color: var(--secundary-color);
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+
 }
 
 .habilidadesConteudo i {
@@ -407,6 +581,10 @@ body {
 
 }
 
+#email {
+    color: var(--secundary-text-color);
+}
+
 .redesSociais {
     display: flex;
     justify-content: space-evenly;
@@ -424,9 +602,13 @@ body {
 }
 
 .small a {
-    color: var(--strong-color);
+    color: var(--secundary-text-color);
     display: flex;
 
+}
+
+.small a:hover {
+    color: var(--strong-color);
 }
 
 .long {
@@ -437,6 +619,10 @@ body {
     justify-content: center;
     align-items: center;
     letter-spacing: 3px;
+}
+
+#email:hover, #email:hover ion-icon {
+    color: var(--strong-color);
 }
 
 .long ion-icon {
@@ -501,13 +687,38 @@ body {
 
     .projeto {
         width: 35vw;
-        height: 80vh;
+        height: 60vh;
+    }
+    .projeto img {
+        height: 30%;
+    }
+
+    .btnVisu {
+        top: 90%;
+    }
+
+    .projetos {
+        height: 180vh;
     }
 
     .contatos {
         height: 100vh;
     }
 
+    #github:hover:after {
+        top: -80%;
+    }
+
+    #php:hover:after {
+        top: -65%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    #php:hover:after {
+        top: -85%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -551,7 +762,7 @@ body {
     }
 
     .habilidades {
-        height: 120vh;
+        height: 160vh;
     }
 
     .social {
@@ -570,7 +781,7 @@ body {
         background-color: var(--main-color);
         width: 100vw;
         text-align: center;
-        height: 80vh;
+        height: 90vh;
         margin: 0;
         padding: 0;
         display: none;
@@ -594,6 +805,49 @@ body {
         margin: 0;
         padding: 2%;
         transition: all .5s ease-in;
+    }
+
+    #html5:hover:after {
+        top: -55%;
+        font-size: 10px;
+    }
+
+    #css3:hover:after {
+        top: -55%;
+        font-size: 10px;
+    }
+
+    #javascript:hover:after {
+        top: -55%;
+        font-size: 10px;
+    }
+
+    #php:hover:after {
+        top: -68%;
+        font-size: 10px;
+    }
+
+    #figma:hover:after {
+        top: -55%;
+        font-size: 10px;
+
+    }
+
+    #vscode:hover:after {
+        top: -55%;
+        font-size: 10px;
+
+    }
+
+    #git:hover:after {
+        top: -55%;
+        font-size: 10px;
+
+    }
+
+    #github:hover:after {
+        font-size: 10px;
+
     }
 }
 
@@ -620,7 +874,7 @@ body {
     }
 
     .habilidades {
-        height: 100vh;
+        height: 120vh;
     }
 
     .habilidades .icone i {
@@ -636,17 +890,13 @@ body {
     }
 
     .projeto {
-        width: 60vw;
-        height: 80vh;
+        width: 70vw;
+        height: 55vh;
         margin: 10% auto;
     }
 
-    .projeto img {
-        height: 50%;
-    }
-
     .projetos {
-        height: 380vh;
+        height: 300vh;
     }
 
     .social {
@@ -657,4 +907,146 @@ body {
     .contatos {
         height: 90vh;
     }
+
+
+    #html5:hover:after {
+        top: -70%;
+    }
+
+    #css3:hover:after {
+        top: -85%;
+        font-size: 10px;
+
+    }
+
+    #javascript:hover:after {
+        top: -85%;
+        font-size: 10px;
+
+    }
+
+    #php:hover:after {
+        top: -105%;
+        font-size: 10px;
+
+    }
+
+    #figma:hover:after {
+        top: -70%;
+        font-size: 10px;
+
+    }
+
+    #vscode:hover:after {
+        top: -85%;
+        font-size: 10px;
+
+    }
+
+    #git:hover:after {
+        top: -85%;
+        font-size: 10px;
+
+    }
+
+    #github:hover:after {
+        top: -105%;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #html5:hover:after {
+        top: -90%;
+    }
+
+    #css3:hover:after {
+        top: -90%;
+
+
+    }
+
+    #javascript:hover:after {
+        top: -110%;
+    }
+
+    #php:hover:after {
+        top: -125%;
+
+
+    }
+
+    #figma:hover:after {
+        top: -75%;
+
+
+    }
+
+    #vscode:hover:after {
+        top: -90%;
+
+
+    }
+
+    #git:hover:after {
+        top: -90%;
+
+    }
+
+    #github:hover:after {
+        top: -125%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #html5:hover:after {
+        top: -100%;
+    }
+
+    #css3:hover:after {
+        top: -100%;
+
+
+    }
+
+    #javascript:hover:after {
+        top: -120%;
+    }
+
+    #php:hover:after {
+        top: -140%;
+
+
+    }
+
+    #figma:hover:after {
+        top: -100%;
+
+
+    }
+
+    #vscode:hover:after {
+        top: -100%;
+
+
+    }
+
+    #git:hover:after {
+        top: -100%;
+
+    }
+
+    #github:hover:after {
+        top: -160%;
+    }
+
+    .habilidades {
+        height: 130vh;
+    }
+
+    .sobreMim {
+        height: 110vh;
+    }
+
 }
