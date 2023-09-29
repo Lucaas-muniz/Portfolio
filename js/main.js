@@ -10,10 +10,8 @@
     $btn.addEventListener('click', function () {
         if ($menu.style.display == 'block') {
             $menu.style.display = 'none';
-            $js.style.overflowY = 'auto';
         } else {
             $menu.style.display = 'block';
-            $js.style.overflow = 'hidden';
 
         }
 
