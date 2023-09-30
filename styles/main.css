@@ -9,16 +9,17 @@
 }
 
 html {
-    width: 100%;
+    width: 100vw;
     height: 100vh
 }
 
 body {
     background-color: var(--main-color);
+    width: 100%;
     overflow-x: hidden;
 }
 
-.logo {
+.logoTitle {
     font-weight: 400;
     font-family: 'orbitron', 'sans-serif';
     background-color: #333;
@@ -29,6 +30,9 @@ body {
     border-bottom: 2px solid var(--strong-color);
     font-size: 1.5rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #checkbox-menu {
@@ -198,7 +202,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    margin: auto;
 }
 
 .aux {
@@ -299,6 +304,7 @@ body {
     left: 0;
     font-size: 12px;
     width: 200%;
+    margin-top: -5%;
     height: auto;
     border: #f1d434 1px solid;
     color: var(--secundary-text-color);
@@ -328,6 +334,7 @@ body {
     background-color: var(--secundary-color);
     border-radius: 30px 30px 30px 0;
     box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+    margin-top: -5%;
 
 
 }
@@ -350,6 +357,7 @@ body {
     background-color: var(--secundary-color);
     box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
     border-radius: 30px 30px 30px 0;
+    margin-top: -5%;
 
 
 }
@@ -369,6 +377,7 @@ body {
     text-align: center;
     padding: 8px;
     z-index: 1;
+    margin-top: -5%;
     background-color: var(--secundary-color);
     border-radius: 30px 30px 30px 0;
     box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
@@ -383,6 +392,7 @@ body {
     left: 0;
     font-size: 12px;
     width: 200%;
+    margin-top: -5%;
     height: auto;
     border: #f1d434 1px solid;
     color: var(--secundary-text-color);
@@ -402,6 +412,7 @@ body {
     position: absolute;
     top: -50%;
     left: 0;
+    margin-top: -5%;
     font-size: 12px;
     width: 200%;
     height: auto;
@@ -435,6 +446,7 @@ body {
     background-color: var(--secundary-color);
     border-radius: 30px 30px 30px 0;
     box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+    margin-top: -5%;
 
 
 }
@@ -457,6 +469,7 @@ body {
     background-color: var(--secundary-color);
     border-radius: 30px 30px 30px 0;
     box-shadow: 0 0 10px rgb(164, 34, 34), 0 0 10px rgb(164, 76, 17);
+    margin-top: -5%;
 
 }
 
@@ -583,6 +596,7 @@ body {
 
 #email {
     color: var(--secundary-text-color);
+    text-decoration: none;
 }
 
 .redesSociais {
@@ -621,7 +635,8 @@ body {
     letter-spacing: 3px;
 }
 
-#email:hover, #email:hover ion-icon {
+#email:hover,
+#email:hover ion-icon {
     color: var(--strong-color);
 }
 
@@ -646,6 +661,26 @@ body {
     letter-spacing: 2px;
     width: 100%;
 
+}
+
+#voltarTopo {
+    position: fixed;
+    font-size: 3rem;
+    bottom: 14%;
+    left: 95%;
+    color: var(--strong-color);
+    cursor: pointer;
+    background-color: transparent;
+    opacity: .7;
+    border: none;
+    padding: 0;
+    z-index: 2;
+    transition: opacity .5s ease;
+    display: none;
+}
+
+#voltarTopo:hover {
+    opacity: 1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -674,7 +709,7 @@ body {
     }
 
     .habilidades {
-        height: 140vh;
+        height: 150vh;
     }
 
 }
@@ -689,6 +724,7 @@ body {
         width: 35vw;
         height: 60vh;
     }
+
     .projeto img {
         height: 30%;
     }
@@ -716,14 +752,23 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+
     #php:hover:after {
         top: -85%;
     }
 }
 
 @media screen and (max-width: 900px) {
+  
+    #voltarTopo {
+        left: 90%;
+    }
+
     #menuHam {
         display: block;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--main-color);
     }
 
     #menuDefault {
@@ -1002,12 +1047,11 @@ body {
 @media screen and (max-width: 500px) {
     #html5:hover:after {
         top: -100%;
+        margin-top: -0%;
     }
 
     #css3:hover:after {
         top: -100%;
-
-
     }
 
     #javascript:hover:after {
@@ -1022,14 +1066,10 @@ body {
 
     #figma:hover:after {
         top: -100%;
-
-
     }
 
     #vscode:hover:after {
         top: -100%;
-
-
     }
 
     #git:hover:after {
@@ -1049,4 +1089,75 @@ body {
         height: 110vh;
     }
 
+}
+
+@media screen and (max-width: 475px) {
+    #html5:hover:after {
+        margin-top: -25%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    #html5:hover:after {
+        margin-top: -25%;
+    }
+
+    #css3:hover:after {
+        margin-top: -25%;
+    }
+
+    #github:hover:after {
+        margin-top: -35%;
+    }
+
+    .sobreMim {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sobreMim {
+        height: 130vh;
+    }
+
+    #css3:hover:after {
+        margin-top: -35%;
+    }
+
+    #github:hover:after {
+        margin-top: -45%;
+    }
+
+    #git:hover:after {
+        margin-top: -15%;
+    }
+
+    #vscode:hover:after {
+        margin-top: -35%;
+    }
+
+    #figma:hover:after {
+        margin-top: -15%;
+    }
+
+    #php:hover:after {
+        margin-top: -20%;
+    }
+
+    #html5:hover:after {
+        margin-top: -35%;
+    }
+
+    #javascript:hover:after {
+        margin-top: -15%;
+    }
+
+    .projeto img {
+        height: 25%;
+    }
+
+    .btnVisu {
+        top: 95%;
+    }
 }
