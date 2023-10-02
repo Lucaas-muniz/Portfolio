@@ -86,6 +86,9 @@ body {
 #menuHam {
     display: none;
 }
+.no-js #menuHam {
+    display: block;
+}
 
 .menuNav {
     display: flex;
@@ -837,6 +840,10 @@ body {
         display: block;
     }
 
+    .no-js #btnHamburguer {
+        display: none;
+    }
+
     #menu {
         background-color: var(--main-color);
         width: 100vw;
@@ -847,6 +854,21 @@ body {
         display: none;
         margin: 5% auto;
         list-style: none;
+    }
+
+    .no-js #menu {
+        display: block;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .no-js #menu a {
+        padding: 0;
+        border-bottom: solid 1px var(--secundary-text-color);
+    }
+
+    .no-js #menu li {
+        margin: 0;
     }
 
     #menu li {
