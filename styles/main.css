@@ -202,13 +202,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin: auto;
+}
+
+#sobreM .subTitle {
+    width: 80%;
+    margin: 5% auto;
+
 }
 
 .aux {
     display: flexbox;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
 }
@@ -263,7 +269,8 @@ body {
     height: 180vh;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 
 }
 
@@ -491,6 +498,11 @@ body {
 
 }
 
+.projetos .subTitle {
+    width: 80%;
+    margin: 5% auto;
+}
+
 .boxPro {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -585,13 +597,14 @@ body {
 }
 
 .contatos {
+    width: 80%;
     height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Oxanium', 'cursive';
     color: var(--secundary-text-color);
-
+    margin: 5% auto;
 }
 
 #email {
@@ -761,7 +774,7 @@ body {
 @media screen and (max-width: 900px) {
   
     #voltarTopo {
-        left: 90%;
+        left: 85%;
     }
 
     #menuHam {
@@ -835,7 +848,7 @@ body {
     }
 
     #menu li {
-        margin: 0;
+        margin: 5% 0;
     }
 
     #menu li a:hover {
