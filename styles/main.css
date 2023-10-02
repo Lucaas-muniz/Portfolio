@@ -508,6 +508,8 @@ body {
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     gap: 10%;
+    width: 80%;
+    margin: auto;
 }
 
 .projeto {
