@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: var(--main-color);
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -29,7 +29,6 @@ body {
     padding: 1rem;
     border-bottom: 2px solid var(--strong-color);
     font-size: 1.5rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -677,7 +676,6 @@ body {
     border-top: 2px solid var(--strong-color);
     font-size: .8rem;
     letter-spacing: 2px;
-    width: 100%;
 
 }
 

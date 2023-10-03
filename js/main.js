@@ -17,7 +17,7 @@
 
         } else {
             $menu.style.display = 'block';
-            $js.style.overflowY = 'hidden';
+            $js.style.overflow = 'hidden';
         }
     });
 
