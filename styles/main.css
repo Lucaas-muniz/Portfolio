@@ -966,17 +966,19 @@ body {
     }
 
     .boxPro {
-        display: block
+        overflow: auto;
+        grid-template-columns: auto auto auto auto;
+        gap: 20%;
     }
 
     .projeto {
         width: 70vw;
-        height: 55vh;
-        margin: 10% auto;
+        height: 60vh;
+        margin: 10% 8%;
     }
 
     .projetos {
-        height: 300vh;
+        height: 120vh;
     }
 
     .social {
@@ -1036,6 +1038,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
     #html5:hover:after {
         top: -90%;
     }
@@ -1134,6 +1137,10 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+    #voltarTopo {
+        left: 85%;
+    }
+
     #html5:hover:after {
         margin-top: -25%;
     }
