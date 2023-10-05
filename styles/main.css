@@ -968,17 +968,17 @@ body {
     .boxPro {
         overflow: auto;
         grid-template-columns: auto auto auto auto;
-        gap: 20%;
+        gap: 5%;
     }
 
     .projeto {
         width: 70vw;
         height: 60vh;
-        margin: 10% 8%;
+        margin: 10%;
     }
 
     .projetos {
-        height: 120vh;
+        height: 110vh;
     }
 
     .social {
