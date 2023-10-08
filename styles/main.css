@@ -85,6 +85,7 @@ body {
 #menuHam {
     display: none;
 }
+
 .no-js #menuHam {
     display: block;
 }
@@ -491,6 +492,10 @@ body {
     justify-content: flex-start;
 }
 
+.slider {
+    display: none;
+}
+
 .projetos {
     height: 200vh;
     display: flex;
@@ -526,8 +531,7 @@ body {
     transition: all .5s linear;
     position: relative;
 }
-
-.projeto:hover {
+.boxPro .projeto:hover {
     opacity: 1;
     scale: 1.07;
     box-shadow: 0 0 20px var(--main-color);
@@ -775,7 +779,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  
+
     #voltarTopo {
         left: 90%;
     }
@@ -932,6 +936,86 @@ body {
 }
 
 @media screen and (max-width: 680px) {
+
+    .navigation {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 78%;
+    }
+
+    .slider {
+        display: flex;
+        width: 400%;
+        height: 100vh;
+        align-items: normal;
+        margin-top: 20%;
+    }
+
+    .divSlider .projeto {
+        margin: 0;
+        width: 70vw;
+        opacity: 1;
+    }
+
+
+    .divSlider {
+        width: 70vw;
+        height: 100vh;
+        display: flex;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider input {
+        display: none;
+    }
+
+    .bar {
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--secundary-text-color);
+        margin: 12px;
+        border-radius: 50%;
+        transition: .8s ease;
+        cursor: pointer;
+    }
+
+    .bar:hover {
+        background-color: var(--secundary-text-color);
+    }
+
+    #card1:checked~.c1 {
+        margin-left: 0;
+    }
+    
+    #card2:checked~.c1 {
+        margin-left: -25%;
+    }
+    
+    #card3:checked~.c1 {
+        margin-left: -50%;
+    }
+    
+    #card4:checked~.c1 {
+        margin-left: -75%;
+    }
+
+    #card1:checked ~ .navigation #bar1 {
+        background-color: var(--secundary-text-color);
+    }
+    #card2:checked ~ .navigation #bar2 {
+        background-color: var(--secundary-text-color);
+    }
+    #card3:checked ~ .navigation #bar3 {
+        background-color: var(--secundary-text-color);
+    }
+    #card4:checked ~ .navigation #bar4 {
+        background-color: var(--secundary-text-color);
+    }
+
     .boasVindas p {
         font-size: 1rem;
         width: 50%;
@@ -965,7 +1049,8 @@ body {
         font-size: 1.1
     }
 
-    .boxPro {
+    .js .boxPro {
+        display: none;
         overflow: auto;
         grid-template-columns: auto auto auto auto;
         gap: 5%;
@@ -1083,6 +1168,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+.navigation {
+    top: 75%;
+}
+
     #html5:hover:after {
         top: -100%;
         margin-top: -0%;
