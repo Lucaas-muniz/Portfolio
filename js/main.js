@@ -47,8 +47,6 @@
     });
 
 
-
-
     var $paragrafo = document.querySelector('.BoasVindasTexto');
     var $texto = $paragrafo.innerHTML;
     var index = 0;
@@ -71,5 +69,4 @@
     }
 
     escrever();
-    
 })()
