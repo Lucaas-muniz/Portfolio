@@ -496,13 +496,17 @@ body {
     display: none;
 }
 
+.arrow {
+    display: none;
+}
+
 .projetos {
     height: 200vh;
     display: flex;
     background-color: var(--secundary-color);
     align-items: center;
     width: 100%;
-
+    position: relative;
 }
 
 .projetos .subTitle {
@@ -531,6 +535,7 @@ body {
     transition: all .5s linear;
     position: relative;
 }
+
 .boxPro .projeto:hover {
     opacity: 1;
     scale: 1.07;
@@ -937,6 +942,23 @@ body {
 
 @media screen and (max-width: 680px) {
 
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        font-size: 3rem;
+        color: var(--main-text-color);
+        cursor: pointer;
+    }
+
+    #left {
+        left: 4vw;
+    }
+
+    #right {
+        right: 4vw;
+    }
+
     .navigation {
         display: flex;
         position: absolute;
@@ -990,29 +1012,32 @@ body {
     #card1:checked~.c1 {
         margin-left: 0;
     }
-    
+
     #card2:checked~.c1 {
         margin-left: -25%;
     }
-    
+
     #card3:checked~.c1 {
         margin-left: -50%;
     }
-    
+
     #card4:checked~.c1 {
         margin-left: -75%;
     }
 
-    #card1:checked ~ .navigation #bar1 {
+    #card1:checked~.navigation #bar1 {
         background-color: var(--secundary-text-color);
     }
-    #card2:checked ~ .navigation #bar2 {
+
+    #card2:checked~.navigation #bar2 {
         background-color: var(--secundary-text-color);
     }
-    #card3:checked ~ .navigation #bar3 {
+
+    #card3:checked~.navigation #bar3 {
         background-color: var(--secundary-text-color);
     }
-    #card4:checked ~ .navigation #bar4 {
+
+    #card4:checked~.navigation #bar4 {
         background-color: var(--secundary-text-color);
     }
 
@@ -1168,9 +1193,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-.navigation {
-    top: 75%;
-}
+    .navigation {
+        top: 75%;
+    }
 
     #html5:hover:after {
         top: -100%;

@@ -69,4 +69,42 @@
     }
 
     escrever();
+
+
+    var $arrowRight = document.getElementById('right');
+    var $arrowLeft = document.getElementById('left');
+    var $btn1 = document.getElementById('card1');
+    var $btn2 = document.getElementById('card2');
+    var $btn3 = document.getElementById('card3');
+    var $btn4 = document.getElementById('card4');
+
+    $arrowLeft.addEventListener('click', function () {
+        if ($btn1.checked == true) {
+            $btn1.checked = true;
+        } if ($btn2.checked == true) {
+            $btn1.checked = true;
+        } if ($btn3.checked == true) {
+            $btn2.checked = true;
+        } if ($btn4.checked == true) {
+            $btn3.checked = true;
+        }
+    })
+
+
+    $arrowRight.addEventListener('click', function () {
+        if ($btn1.checked == true) {
+            $btn2.checked = true;
+            return;
+        } if ($btn2.checked == true) {
+            $btn3.checked = true;
+            return;
+        } if ($btn3.checked == true) {
+            $btn4.checked = true;
+            return;
+        } if ($btn4.checked == true) {
+            $btn4.checked = true;
+            return;
+        }
+    })
+    
 })()
