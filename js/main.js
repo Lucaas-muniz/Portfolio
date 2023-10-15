@@ -71,12 +71,19 @@
     escrever();
 
 
+
+
     var $arrowRight = document.getElementById('right');
     var $arrowLeft = document.getElementById('left');
     var $btn1 = document.getElementById('card1');
     var $btn2 = document.getElementById('card2');
     var $btn3 = document.getElementById('card3');
     var $btn4 = document.getElementById('card4');
+    var $projetos = document.querySelectorAll('.card');
+    var atual = document.getElementById('card1');
+
+
+
 
     $arrowLeft.addEventListener('click', function () {
         if ($btn1.checked == true) {
@@ -106,5 +113,7 @@
             return;
         }
     })
-    
+
+
+
 })()

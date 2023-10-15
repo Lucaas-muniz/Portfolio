@@ -942,7 +942,7 @@ body {
 
 @media screen and (max-width: 680px) {
 
-    .arrow {
+    .js .arrow {
         display: block;
         position: absolute;
         top: 50%;
@@ -952,11 +952,11 @@ body {
     }
 
     #left {
-        left: 4vw;
+        left: 3vw;
     }
 
     #right {
-        right: 4vw;
+        right: 3vw;
     }
 
     .navigation {
@@ -981,6 +981,9 @@ body {
         opacity: 1;
     }
 
+    .no-js .divSlider {
+        display: none;
+    }
 
     .divSlider {
         width: 70vw;
@@ -1056,6 +1059,10 @@ body {
     .sobreMim {
         height: 100vh;
     }
+    .sobreMim .aux {
+        height: fit-content;
+        align-items: center;
+    }
 
     .SobreMimParagrafo {
         font-size: .9rem;
@@ -1063,7 +1070,7 @@ body {
     }
 
     .habilidades {
-        height: 120vh;
+        height: 130vh;
     }
 
     .habilidades .icone i {
@@ -1076,6 +1083,9 @@ body {
 
     .js .boxPro {
         display: none;
+    }
+
+    .boxPro {
         overflow: auto;
         grid-template-columns: auto auto auto auto;
         gap: 5%;
