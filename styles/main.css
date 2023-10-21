@@ -1073,6 +1073,11 @@ body {
         height: 130vh;
     }
 
+    .habilidades .aux {
+        height: fit-content;
+        align-items: center;
+    }
+
     .habilidades .icone i {
         font-size: 2rem;
     }
@@ -1104,6 +1109,11 @@ body {
     .social {
         font-size: 2rem;
         padding: 5%;
+    }
+
+    .contatos .aux {
+        height: fit-content;
+        align-items: center;
     }
 
     .contatos {
